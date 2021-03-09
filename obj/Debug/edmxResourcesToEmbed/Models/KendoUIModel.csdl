@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CMDALLERGY">
+    <Key>
+      <PropertyRef Name="HOSPITAL_ID" />
+      <PropertyRef Name="PAT_IDNO" />
+      <PropertyRef Name="REC_NO" />
+    </Key>
+    <Property Name="HOSPITAL_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAT_IDNO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="REC_NO" Type="Int32" Nullable="false" />
+    <Property Name="UPLOAD_DTTM" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="SOURCE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SOURCE_IDNO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="UPLOAD_MARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="DRUG" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CANCEL_YN" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CANCEL_DTTM" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="CANCEL_USER_ID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CANCEL_NAMEC" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="PROC_DTTM" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PROC_USER_ID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PROC_NAMEC" Type="String" MaxLength="24" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATE_DTTM" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATE_USER_ID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATE_NAMEC" Type="String" MaxLength="24" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="HOSPITAL_ID_ORI" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="HOSPITAL_SNAME_ORI" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CMDBDRC">
+    <Key>
+      <PropertyRef Name="HOSPITAL_ID" />
+      <PropertyRef Name="PAT_IDNO" />
+      <PropertyRef Name="REC_NO" />
+    </Key>
+    <Property Name="HOSPITAL_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAT_IDNO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="REC_TYPE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="REC_NO" Type="Int32" Nullable="false" />
+    <Property Name="SOURCE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="NHI_YM" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="SECTION" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="SECTION_NAMEC" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="MAIN_DIAGNOSIS" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="MAIN_DIAGNOSIS_NAME" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="REC_CODE" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="REC_NAME" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="NHI_CODE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="NHI_NAME" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="REGION" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EXECUTE_DATE" Type="DateTime" Precision="0" />
+    <Property Name="REPORT_DATE" Type="DateTime" Precision="0" />
+    <Property Name="QTY" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="CANCEL_YN" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="CANCEL_DTTM" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="CANCEL_USER_ID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CANCEL_NAMEC" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="PROC_DTTM" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="PROC_USER_ID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="PROC_NAMEC" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DTTM" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_ID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_NAMEC" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="ENCNT_DATE_START" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="ENCNT_DATE_END" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="HOSPITAL_ID_ORI" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="HOSPITAL_SNAME_ORI" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="OPDDATE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="TREATMENT_SITE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CMDEXAMREPORT">
+    <Key>
+      <PropertyRef Name="HOSPITAL_ID" />
+      <PropertyRef Name="PAT_IDNO" />
+      <PropertyRef Name="REC_NO" />
+    </Key>
+    <Property Name="HOSPITAL_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAT_IDNO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="REC_NO" Type="Int32" Nullable="false" />
+    <Property Name="EXAM_TYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="SOURCE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="NHI_YM" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="SECTION" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="SECTION_NAMEC" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="MAIN_DIAGNOSIS" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="MAIN_DIAGNOSIS_NAME" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="REGION" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EXAM_TYPE_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="EXAM_TYPE_NAME" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="NHI_CODE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="NHI_NAME" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="EXAM_NAME" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="EXAM_PROCEDURE" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="EXAM_REPORT01" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="UNIT" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="REFERENCE" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="EXAM_REPORT02" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="SPECIMEN" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_DATE" Type="DateTime" Precision="0" />
+    <Property Name="EXECUTE_DATE" Type="DateTime" Precision="0" />
+    <Property Name="REPORT_DATE" Type="DateTime" Precision="0" />
+    <Property Name="CANCEL_YN" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CANCEL_DTTM" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="CANCEL_USER_ID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CANCEL_NAMEC" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="PROC_DTTM" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PROC_USER_ID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PROC_NAMEC" Type="String" MaxLength="24" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATE_DTTM" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATE_USER_ID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATE_NAMEC" Type="String" MaxLength="24" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="HOSPITAL_ID_ORI" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="HOSPITAL_SNAME_ORI" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CERTIFICATION" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="VIDEO_MATERIAL" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CMDTOCC">
+    <Key>
+      <PropertyRef Name="HOSPITAL_ID" />
+      <PropertyRef Name="PAT_IDNO" />
+    </Key>
+    <Property Name="HOSPITAL_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAT_IDNO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TOCCMSG" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CANCEL_YN" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CANCEL_DTTM" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="CANCEL_USER_ID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CANCEL_NAMEC" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="PROC_DTTM" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PROC_USER_ID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PROC_NAMEC" Type="String" MaxLength="24" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATE_DTTM" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATE_USER_ID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CREATE_NAMEC" Type="String" MaxLength="24" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PHRCDRC">
+    <Key>
+      <PropertyRef Name="HOSPITAL_ID" />
+      <PropertyRef Name="PAT_IDNO" />
+      <PropertyRef Name="REC_NO" />
+    </Key>
+    <Property Name="HOSPITAL_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAT_IDNO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="REC_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CASE_NO" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="DRUGSOURCE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UDDATC" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+    <Property Name="UDDATCNM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DRUGCOMPCODE" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="DRUGCOMPCODENM" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="UDNNHICODE" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="UDDMDPNAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="BEGIN_DT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="END_DT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DSPQTY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DAYS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CANCEL_YN" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="CANCEL_DTTM" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="CANCEL_USER_ID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CANCEL_NAMEC" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="PROC_DTTM" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="PROC_USER_ID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="PROC_NAMEC" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DTTM" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_ID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_NAMEC" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="MAIN_DIAGNOSIS" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="ROUTE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DOSEUNIT" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="COMPLEX_MARK" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="INSULOOKSEQ" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="HOSPITAL_ID_ORI" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="HOSPITAL_SNAME_ORI" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ATC3_NAME" Type="String" MaxLength="600" FixedLength="false" Unicode="false" />
+    <Property Name="HOSPITAL_ID_CHRONIC" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="HOSPITAL_SNAME_CHRONIC" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="COUNTRY">
+    <Key>
+      <PropertyRef Name="CountryId" />
+      <PropertyRef Name="CountryName" />
+    </Key>
+    <Property Name="CountryId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CountryName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TestEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CMDALLERGY" EntityType="Self.CMDALLERGY" />
+    <EntitySet Name="CMDBDRC" EntityType="Self.CMDBDRC" />
+    <EntitySet Name="CMDEXAMREPORT" EntityType="Self.CMDEXAMREPORT" />
+    <EntitySet Name="CMDTOCC" EntityType="Self.CMDTOCC" />
+    <EntitySet Name="PHRCDRC" EntityType="Self.PHRCDRC" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="COUNTRY" EntityType="Self.COUNTRY" />
+  </EntityContainer>
+</Schema>

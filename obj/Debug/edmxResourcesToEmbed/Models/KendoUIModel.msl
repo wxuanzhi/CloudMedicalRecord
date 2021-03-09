@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TestModelStoreContainer" CdmEntityContainer="TestEntities">
+    <EntitySetMapping Name="CMDALLERGY">
+      <EntityTypeMapping TypeName="TestModel.CMDALLERGY">
+        <MappingFragment StoreEntitySet="CMDALLERGY">
+          <ScalarProperty Name="HOSPITAL_ID" ColumnName="HOSPITAL_ID" />
+          <ScalarProperty Name="PAT_IDNO" ColumnName="PAT_IDNO" />
+          <ScalarProperty Name="REC_NO" ColumnName="REC_NO" />
+          <ScalarProperty Name="UPLOAD_DTTM" ColumnName="UPLOAD_DTTM" />
+          <ScalarProperty Name="SOURCE" ColumnName="SOURCE" />
+          <ScalarProperty Name="SOURCE_IDNO" ColumnName="SOURCE_IDNO" />
+          <ScalarProperty Name="UPLOAD_MARK" ColumnName="UPLOAD_MARK" />
+          <ScalarProperty Name="DRUG" ColumnName="DRUG" />
+          <ScalarProperty Name="CANCEL_YN" ColumnName="CANCEL_YN" />
+          <ScalarProperty Name="CANCEL_DTTM" ColumnName="CANCEL_DTTM" />
+          <ScalarProperty Name="CANCEL_USER_ID" ColumnName="CANCEL_USER_ID" />
+          <ScalarProperty Name="CANCEL_NAMEC" ColumnName="CANCEL_NAMEC" />
+          <ScalarProperty Name="PROC_DTTM" ColumnName="PROC_DTTM" />
+          <ScalarProperty Name="PROC_USER_ID" ColumnName="PROC_USER_ID" />
+          <ScalarProperty Name="PROC_NAMEC" ColumnName="PROC_NAMEC" />
+          <ScalarProperty Name="CREATE_DTTM" ColumnName="CREATE_DTTM" />
+          <ScalarProperty Name="CREATE_USER_ID" ColumnName="CREATE_USER_ID" />
+          <ScalarProperty Name="CREATE_NAMEC" ColumnName="CREATE_NAMEC" />
+          <ScalarProperty Name="HOSPITAL_ID_ORI" ColumnName="HOSPITAL_ID_ORI" />
+          <ScalarProperty Name="HOSPITAL_SNAME_ORI" ColumnName="HOSPITAL_SNAME_ORI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMDBDRC">
+      <EntityTypeMapping TypeName="TestModel.CMDBDRC">
+        <MappingFragment StoreEntitySet="CMDBDRC">
+          <ScalarProperty Name="HOSPITAL_ID" ColumnName="HOSPITAL_ID" />
+          <ScalarProperty Name="PAT_IDNO" ColumnName="PAT_IDNO" />
+          <ScalarProperty Name="REC_TYPE" ColumnName="REC_TYPE" />
+          <ScalarProperty Name="REC_NO" ColumnName="REC_NO" />
+          <ScalarProperty Name="SOURCE" ColumnName="SOURCE" />
+          <ScalarProperty Name="NHI_YM" ColumnName="NHI_YM" />
+          <ScalarProperty Name="SECTION" ColumnName="SECTION" />
+          <ScalarProperty Name="SECTION_NAMEC" ColumnName="SECTION_NAMEC" />
+          <ScalarProperty Name="MAIN_DIAGNOSIS" ColumnName="MAIN_DIAGNOSIS" />
+          <ScalarProperty Name="MAIN_DIAGNOSIS_NAME" ColumnName="MAIN_DIAGNOSIS_NAME" />
+          <ScalarProperty Name="REC_CODE" ColumnName="REC_CODE" />
+          <ScalarProperty Name="REC_NAME" ColumnName="REC_NAME" />
+          <ScalarProperty Name="NHI_CODE" ColumnName="NHI_CODE" />
+          <ScalarProperty Name="NHI_NAME" ColumnName="NHI_NAME" />
+          <ScalarProperty Name="REGION" ColumnName="REGION" />
+          <ScalarProperty Name="EXECUTE_DATE" ColumnName="EXECUTE_DATE" />
+          <ScalarProperty Name="REPORT_DATE" ColumnName="REPORT_DATE" />
+          <ScalarProperty Name="QTY" ColumnName="QTY" />
+          <ScalarProperty Name="CANCEL_YN" ColumnName="CANCEL_YN" />
+          <ScalarProperty Name="CANCEL_DTTM" ColumnName="CANCEL_DTTM" />
+          <ScalarProperty Name="CANCEL_USER_ID" ColumnName="CANCEL_USER_ID" />
+          <ScalarProperty Name="CANCEL_NAMEC" ColumnName="CANCEL_NAMEC" />
+          <ScalarProperty Name="PROC_DTTM" ColumnName="PROC_DTTM" />
+          <ScalarProperty Name="PROC_USER_ID" ColumnName="PROC_USER_ID" />
+          <ScalarProperty Name="PROC_NAMEC" ColumnName="PROC_NAMEC" />
+          <ScalarProperty Name="CREATE_DTTM" ColumnName="CREATE_DTTM" />
+          <ScalarProperty Name="CREATE_USER_ID" ColumnName="CREATE_USER_ID" />
+          <ScalarProperty Name="CREATE_NAMEC" ColumnName="CREATE_NAMEC" />
+          <ScalarProperty Name="ENCNT_DATE_START" ColumnName="ENCNT_DATE_START" />
+          <ScalarProperty Name="ENCNT_DATE_END" ColumnName="ENCNT_DATE_END" />
+          <ScalarProperty Name="HOSPITAL_ID_ORI" ColumnName="HOSPITAL_ID_ORI" />
+          <ScalarProperty Name="HOSPITAL_SNAME_ORI" ColumnName="HOSPITAL_SNAME_ORI" />
+          <ScalarProperty Name="OPDDATE" ColumnName="OPDDATE" />
+          <ScalarProperty Name="TREATMENT_SITE" ColumnName="TREATMENT_SITE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMDEXAMREPORT">
+      <EntityTypeMapping TypeName="TestModel.CMDEXAMREPORT">
+        <MappingFragment StoreEntitySet="CMDEXAMREPORT">
+          <ScalarProperty Name="HOSPITAL_ID" ColumnName="HOSPITAL_ID" />
+          <ScalarProperty Name="PAT_IDNO" ColumnName="PAT_IDNO" />
+          <ScalarProperty Name="REC_NO" ColumnName="REC_NO" />
+          <ScalarProperty Name="EXAM_TYPE" ColumnName="EXAM_TYPE" />
+          <ScalarProperty Name="SOURCE" ColumnName="SOURCE" />
+          <ScalarProperty Name="NHI_YM" ColumnName="NHI_YM" />
+          <ScalarProperty Name="SECTION" ColumnName="SECTION" />
+          <ScalarProperty Name="SECTION_NAMEC" ColumnName="SECTION_NAMEC" />
+          <ScalarProperty Name="MAIN_DIAGNOSIS" ColumnName="MAIN_DIAGNOSIS" />
+          <ScalarProperty Name="MAIN_DIAGNOSIS_NAME" ColumnName="MAIN_DIAGNOSIS_NAME" />
+          <ScalarProperty Name="REGION" ColumnName="REGION" />
+          <ScalarProperty Name="EXAM_TYPE_CODE" ColumnName="EXAM_TYPE_CODE" />
+          <ScalarProperty Name="EXAM_TYPE_NAME" ColumnName="EXAM_TYPE_NAME" />
+          <ScalarProperty Name="NHI_CODE" ColumnName="NHI_CODE" />
+          <ScalarProperty Name="NHI_NAME" ColumnName="NHI_NAME" />
+          <ScalarProperty Name="EXAM_NAME" ColumnName="EXAM_NAME" />
+          <ScalarProperty Name="EXAM_PROCEDURE" ColumnName="EXAM_PROCEDURE" />
+          <ScalarProperty Name="EXAM_REPORT01" ColumnName="EXAM_REPORT01" />
+          <ScalarProperty Name="UNIT" ColumnName="UNIT" />
+          <ScalarProperty Name="REFERENCE" ColumnName="REFERENCE" />
+          <ScalarProperty Name="EXAM_REPORT02" ColumnName="EXAM_REPORT02" />
+          <ScalarProperty Name="SPECIMEN" ColumnName="SPECIMEN" />
+          <ScalarProperty Name="ORDER_DATE" ColumnName="ORDER_DATE" />
+          <ScalarProperty Name="EXECUTE_DATE" ColumnName="EXECUTE_DATE" />
+          <ScalarProperty Name="REPORT_DATE" ColumnName="REPORT_DATE" />
+          <ScalarProperty Name="CANCEL_YN" ColumnName="CANCEL_YN" />
+          <ScalarProperty Name="CANCEL_DTTM" ColumnName="CANCEL_DTTM" />
+          <ScalarProperty Name="CANCEL_USER_ID" ColumnName="CANCEL_USER_ID" />
+          <ScalarProperty Name="CANCEL_NAMEC" ColumnName="CANCEL_NAMEC" />
+          <ScalarProperty Name="PROC_DTTM" ColumnName="PROC_DTTM" />
+          <ScalarProperty Name="PROC_USER_ID" ColumnName="PROC_USER_ID" />
+          <ScalarProperty Name="PROC_NAMEC" ColumnName="PROC_NAMEC" />
+          <ScalarProperty Name="CREATE_DTTM" ColumnName="CREATE_DTTM" />
+          <ScalarProperty Name="CREATE_USER_ID" ColumnName="CREATE_USER_ID" />
+          <ScalarProperty Name="CREATE_NAMEC" ColumnName="CREATE_NAMEC" />
+          <ScalarProperty Name="HOSPITAL_ID_ORI" ColumnName="HOSPITAL_ID_ORI" />
+          <ScalarProperty Name="HOSPITAL_SNAME_ORI" ColumnName="HOSPITAL_SNAME_ORI" />
+          <ScalarProperty Name="CERTIFICATION" ColumnName="CERTIFICATION" />
+          <ScalarProperty Name="VIDEO_MATERIAL" ColumnName="VIDEO_MATERIAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMDTOCC">
+      <EntityTypeMapping TypeName="TestModel.CMDTOCC">
+        <MappingFragment StoreEntitySet="CMDTOCC">
+          <ScalarProperty Name="HOSPITAL_ID" ColumnName="HOSPITAL_ID" />
+          <ScalarProperty Name="PAT_IDNO" ColumnName="PAT_IDNO" />
+          <ScalarProperty Name="TOCCMSG" ColumnName="TOCCMSG" />
+          <ScalarProperty Name="CANCEL_YN" ColumnName="CANCEL_YN" />
+          <ScalarProperty Name="CANCEL_DTTM" ColumnName="CANCEL_DTTM" />
+          <ScalarProperty Name="CANCEL_USER_ID" ColumnName="CANCEL_USER_ID" />
+          <ScalarProperty Name="CANCEL_NAMEC" ColumnName="CANCEL_NAMEC" />
+          <ScalarProperty Name="PROC_DTTM" ColumnName="PROC_DTTM" />
+          <ScalarProperty Name="PROC_USER_ID" ColumnName="PROC_USER_ID" />
+          <ScalarProperty Name="PROC_NAMEC" ColumnName="PROC_NAMEC" />
+          <ScalarProperty Name="CREATE_DTTM" ColumnName="CREATE_DTTM" />
+          <ScalarProperty Name="CREATE_USER_ID" ColumnName="CREATE_USER_ID" />
+          <ScalarProperty Name="CREATE_NAMEC" ColumnName="CREATE_NAMEC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PHRCDRC">
+      <EntityTypeMapping TypeName="TestModel.PHRCDRC">
+        <MappingFragment StoreEntitySet="PHRCDRC">
+          <ScalarProperty Name="HOSPITAL_ID" ColumnName="HOSPITAL_ID" />
+          <ScalarProperty Name="PAT_IDNO" ColumnName="PAT_IDNO" />
+          <ScalarProperty Name="REC_NO" ColumnName="REC_NO" />
+          <ScalarProperty Name="CASE_NO" ColumnName="CASE_NO" />
+          <ScalarProperty Name="DRUGSOURCE" ColumnName="DRUGSOURCE" />
+          <ScalarProperty Name="UDDATC" ColumnName="UDDATC" />
+          <ScalarProperty Name="UDDATCNM" ColumnName="UDDATCNM" />
+          <ScalarProperty Name="DRUGCOMPCODE" ColumnName="DRUGCOMPCODE" />
+          <ScalarProperty Name="DRUGCOMPCODENM" ColumnName="DRUGCOMPCODENM" />
+          <ScalarProperty Name="UDNNHICODE" ColumnName="UDNNHICODE" />
+          <ScalarProperty Name="UDDMDPNAME" ColumnName="UDDMDPNAME" />
+          <ScalarProperty Name="BEGIN_DT" ColumnName="BEGIN_DT" />
+          <ScalarProperty Name="END_DT" ColumnName="END_DT" />
+          <ScalarProperty Name="DSPQTY" ColumnName="DSPQTY" />
+          <ScalarProperty Name="DAYS" ColumnName="DAYS" />
+          <ScalarProperty Name="CANCEL_YN" ColumnName="CANCEL_YN" />
+          <ScalarProperty Name="CANCEL_DTTM" ColumnName="CANCEL_DTTM" />
+          <ScalarProperty Name="CANCEL_USER_ID" ColumnName="CANCEL_USER_ID" />
+          <ScalarProperty Name="CANCEL_NAMEC" ColumnName="CANCEL_NAMEC" />
+          <ScalarProperty Name="PROC_DTTM" ColumnName="PROC_DTTM" />
+          <ScalarProperty Name="PROC_USER_ID" ColumnName="PROC_USER_ID" />
+          <ScalarProperty Name="PROC_NAMEC" ColumnName="PROC_NAMEC" />
+          <ScalarProperty Name="CREATE_DTTM" ColumnName="CREATE_DTTM" />
+          <ScalarProperty Name="CREATE_USER_ID" ColumnName="CREATE_USER_ID" />
+          <ScalarProperty Name="CREATE_NAMEC" ColumnName="CREATE_NAMEC" />
+          <ScalarProperty Name="MAIN_DIAGNOSIS" ColumnName="MAIN_DIAGNOSIS" />
+          <ScalarProperty Name="ROUTE" ColumnName="ROUTE" />
+          <ScalarProperty Name="DOSEUNIT" ColumnName="DOSEUNIT" />
+          <ScalarProperty Name="COMPLEX_MARK" ColumnName="COMPLEX_MARK" />
+          <ScalarProperty Name="INSULOOKSEQ" ColumnName="INSULOOKSEQ" />
+          <ScalarProperty Name="HOSPITAL_ID_ORI" ColumnName="HOSPITAL_ID_ORI" />
+          <ScalarProperty Name="HOSPITAL_SNAME_ORI" ColumnName="HOSPITAL_SNAME_ORI" />
+          <ScalarProperty Name="ATC3_NAME" ColumnName="ATC3_NAME" />
+          <ScalarProperty Name="HOSPITAL_ID_CHRONIC" ColumnName="HOSPITAL_ID_CHRONIC" />
+          <ScalarProperty Name="HOSPITAL_SNAME_CHRONIC" ColumnName="HOSPITAL_SNAME_CHRONIC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="TestModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COUNTRY">
+      <EntityTypeMapping TypeName="TestModel.COUNTRY">
+        <MappingFragment StoreEntitySet="COUNTRY">
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

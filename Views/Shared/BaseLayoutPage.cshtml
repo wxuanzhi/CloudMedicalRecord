@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/kendo/2020.3.1021/kendo.common.min.css")
+    @Styles.Render("~/Content/kendo/2020.3.1021/kendo.bootstrap.min.css")
+    @Scripts.Render("~/Scripts/jquery-3.3.1.min.js")
+    @Scripts.Render("~/Scripts/kendo/2020.3.1021/kendo.web.min.js")
+    @Scripts.Render("~/Scripts/kendo/2020.3.1021/kendo.dataviz.min.js")
+    @RenderSection("scripts", required: false)
+
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

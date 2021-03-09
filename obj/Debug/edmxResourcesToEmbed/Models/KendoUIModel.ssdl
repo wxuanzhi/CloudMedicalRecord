@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CMDALLERGY">
+    <Key>
+      <PropertyRef Name="HOSPITAL_ID" />
+      <PropertyRef Name="PAT_IDNO" />
+      <PropertyRef Name="REC_NO" />
+    </Key>
+    <Property Name="HOSPITAL_ID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="PAT_IDNO" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="REC_NO" Type="int" Nullable="false" />
+    <Property Name="UPLOAD_DTTM" Type="varchar" MaxLength="14" />
+    <Property Name="SOURCE" Type="varchar" MaxLength="10" />
+    <Property Name="SOURCE_IDNO" Type="varchar" MaxLength="10" />
+    <Property Name="UPLOAD_MARK" Type="varchar" MaxLength="1000" />
+    <Property Name="DRUG" Type="varchar" MaxLength="1000" />
+    <Property Name="CANCEL_YN" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="CANCEL_DTTM" Type="varchar" MaxLength="14" />
+    <Property Name="CANCEL_USER_ID" Type="varchar" MaxLength="15" />
+    <Property Name="CANCEL_NAMEC" Type="varchar" MaxLength="24" />
+    <Property Name="PROC_DTTM" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="PROC_USER_ID" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="PROC_NAMEC" Type="varchar" MaxLength="24" Nullable="false" />
+    <Property Name="CREATE_DTTM" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="CREATE_USER_ID" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="CREATE_NAMEC" Type="varchar" MaxLength="24" Nullable="false" />
+    <Property Name="HOSPITAL_ID_ORI" Type="varchar" MaxLength="10" />
+    <Property Name="HOSPITAL_SNAME_ORI" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="CMDBDRC">
+    <Key>
+      <PropertyRef Name="HOSPITAL_ID" />
+      <PropertyRef Name="PAT_IDNO" />
+      <PropertyRef Name="REC_NO" />
+    </Key>
+    <Property Name="HOSPITAL_ID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="PAT_IDNO" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="REC_TYPE" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="REC_NO" Type="int" Nullable="false" />
+    <Property Name="SOURCE" Type="varchar" MaxLength="10" />
+    <Property Name="NHI_YM" Type="varchar" MaxLength="6" />
+    <Property Name="SECTION" Type="varchar" MaxLength="2" />
+    <Property Name="SECTION_NAMEC" Type="varchar" MaxLength="1000" />
+    <Property Name="MAIN_DIAGNOSIS" Type="varchar" MaxLength="2000" />
+    <Property Name="MAIN_DIAGNOSIS_NAME" Type="varchar" MaxLength="2000" />
+    <Property Name="REC_CODE" Type="varchar" MaxLength="2000" />
+    <Property Name="REC_NAME" Type="varchar" MaxLength="2000" />
+    <Property Name="NHI_CODE" Type="varchar" MaxLength="100" />
+    <Property Name="NHI_NAME" Type="varchar" MaxLength="2000" />
+    <Property Name="REGION" Type="varchar" MaxLength="20" />
+    <Property Name="EXECUTE_DATE" Type="date" />
+    <Property Name="REPORT_DATE" Type="date" />
+    <Property Name="QTY" Type="varchar" MaxLength="8" />
+    <Property Name="CANCEL_YN" Type="varchar" MaxLength="1" />
+    <Property Name="CANCEL_DTTM" Type="varchar" MaxLength="14" />
+    <Property Name="CANCEL_USER_ID" Type="varchar" MaxLength="15" />
+    <Property Name="CANCEL_NAMEC" Type="varchar" MaxLength="24" />
+    <Property Name="PROC_DTTM" Type="varchar" MaxLength="14" />
+    <Property Name="PROC_USER_ID" Type="varchar" MaxLength="15" />
+    <Property Name="PROC_NAMEC" Type="varchar" MaxLength="24" />
+    <Property Name="CREATE_DTTM" Type="varchar" MaxLength="14" />
+    <Property Name="CREATE_USER_ID" Type="varchar" MaxLength="15" />
+    <Property Name="CREATE_NAMEC" Type="varchar" MaxLength="24" />
+    <Property Name="ENCNT_DATE_START" Type="varchar" MaxLength="8" />
+    <Property Name="ENCNT_DATE_END" Type="varchar" MaxLength="8" />
+    <Property Name="HOSPITAL_ID_ORI" Type="varchar" MaxLength="10" />
+    <Property Name="HOSPITAL_SNAME_ORI" Type="varchar" MaxLength="10" />
+    <Property Name="OPDDATE" Type="varchar" MaxLength="8" />
+    <Property Name="TREATMENT_SITE" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="CMDEXAMREPORT">
+    <Key>
+      <PropertyRef Name="HOSPITAL_ID" />
+      <PropertyRef Name="PAT_IDNO" />
+      <PropertyRef Name="REC_NO" />
+    </Key>
+    <Property Name="HOSPITAL_ID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="PAT_IDNO" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="REC_NO" Type="int" Nullable="false" />
+    <Property Name="EXAM_TYPE" Type="varchar" MaxLength="1" />
+    <Property Name="SOURCE" Type="varchar" MaxLength="10" />
+    <Property Name="NHI_YM" Type="varchar" MaxLength="6" />
+    <Property Name="SECTION" Type="varchar" MaxLength="2" />
+    <Property Name="SECTION_NAMEC" Type="varchar" MaxLength="1000" />
+    <Property Name="MAIN_DIAGNOSIS" Type="varchar" MaxLength="2000" />
+    <Property Name="MAIN_DIAGNOSIS_NAME" Type="varchar" MaxLength="2000" />
+    <Property Name="REGION" Type="varchar" MaxLength="20" />
+    <Property Name="EXAM_TYPE_CODE" Type="varchar" MaxLength="10" />
+    <Property Name="EXAM_TYPE_NAME" Type="varchar" MaxLength="500" />
+    <Property Name="NHI_CODE" Type="varchar" MaxLength="100" />
+    <Property Name="NHI_NAME" Type="varchar" MaxLength="2000" />
+    <Property Name="EXAM_NAME" Type="varchar" MaxLength="500" />
+    <Property Name="EXAM_PROCEDURE" Type="varchar" MaxLength="500" />
+    <Property Name="EXAM_REPORT01" Type="varchar" MaxLength="4000" />
+    <Property Name="UNIT" Type="varchar" MaxLength="500" />
+    <Property Name="REFERENCE" Type="varchar" MaxLength="500" />
+    <Property Name="EXAM_REPORT02" Type="varchar" MaxLength="4000" />
+    <Property Name="SPECIMEN" Type="varchar" MaxLength="500" />
+    <Property Name="ORDER_DATE" Type="date" />
+    <Property Name="EXECUTE_DATE" Type="date" />
+    <Property Name="REPORT_DATE" Type="date" />
+    <Property Name="CANCEL_YN" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="CANCEL_DTTM" Type="varchar" MaxLength="14" />
+    <Property Name="CANCEL_USER_ID" Type="varchar" MaxLength="15" />
+    <Property Name="CANCEL_NAMEC" Type="varchar" MaxLength="24" />
+    <Property Name="PROC_DTTM" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="PROC_USER_ID" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="PROC_NAMEC" Type="varchar" MaxLength="24" Nullable="false" />
+    <Property Name="CREATE_DTTM" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="CREATE_USER_ID" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="CREATE_NAMEC" Type="varchar" MaxLength="24" Nullable="false" />
+    <Property Name="HOSPITAL_ID_ORI" Type="varchar" MaxLength="10" />
+    <Property Name="HOSPITAL_SNAME_ORI" Type="varchar" MaxLength="10" />
+    <Property Name="CERTIFICATION" Type="varchar" MaxLength="1" />
+    <Property Name="VIDEO_MATERIAL" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="CMDTOCC">
+    <Key>
+      <PropertyRef Name="HOSPITAL_ID" />
+      <PropertyRef Name="PAT_IDNO" />
+    </Key>
+    <Property Name="HOSPITAL_ID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="PAT_IDNO" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TOCCMSG" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="CANCEL_YN" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="CANCEL_DTTM" Type="varchar" MaxLength="14" />
+    <Property Name="CANCEL_USER_ID" Type="varchar" MaxLength="15" />
+    <Property Name="CANCEL_NAMEC" Type="varchar" MaxLength="24" />
+    <Property Name="PROC_DTTM" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="PROC_USER_ID" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="PROC_NAMEC" Type="varchar" MaxLength="24" Nullable="false" />
+    <Property Name="CREATE_DTTM" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="CREATE_USER_ID" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="CREATE_NAMEC" Type="varchar" MaxLength="24" Nullable="false" />
+  </EntityType>
+  <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'Test.dbo.COUNTRY' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+  <EntityType Name="COUNTRY">
+    <Key>
+      <PropertyRef Name="CountryId" />
+      <PropertyRef Name="CountryName" />
+    </Key>
+    <Property Name="CountryId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CountryName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--產生期間發現錯誤:
+警告 6013: 資料表/檢視 'Test.dbo.HOSPITAL' 未定義主索引鍵，也無法推斷有效的主索引鍵。此資料表/檢視已被排除。如果要使用此實體，您必須檢閱您的結構描述，加入正確的索引鍵，並將它取消註解。
+        <EntityType Name="HOSPITAL">
+          <Property Name="HospitalId" Type="varchar" MaxLength="50" />
+          <Property Name="HospitalName" Type="varchar" MaxLength="50" />
+        </EntityType>-->
+  <!--產生期間發現錯誤:
+警告 6013: 資料表/檢視 'Test.dbo.PATIENT' 未定義主索引鍵，也無法推斷有效的主索引鍵。此資料表/檢視已被排除。如果要使用此實體，您必須檢閱您的結構描述，加入正確的索引鍵，並將它取消註解。
+        <EntityType Name="PATIENT">
+          <Property Name="PatientId" Type="varchar" MaxLength="50" />
+          <Property Name="PatientName" Type="varchar" MaxLength="50" />
+        </EntityType>-->
+  <EntityType Name="PHRCDRC">
+    <Key>
+      <PropertyRef Name="HOSPITAL_ID" />
+      <PropertyRef Name="PAT_IDNO" />
+      <PropertyRef Name="REC_NO" />
+    </Key>
+    <Property Name="HOSPITAL_ID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="PAT_IDNO" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="REC_NO" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CASE_NO" Type="varchar" MaxLength="8" />
+    <Property Name="DRUGSOURCE" Type="varchar" MaxLength="100" />
+    <Property Name="UDDATC" Type="varchar" MaxLength="7" />
+    <Property Name="UDDATCNM" Type="varchar" MaxLength="100" />
+    <Property Name="DRUGCOMPCODE" Type="varchar" MaxLength="12" />
+    <Property Name="DRUGCOMPCODENM" Type="varchar" MaxLength="200" />
+    <Property Name="UDNNHICODE" Type="varchar" MaxLength="12" />
+    <Property Name="UDDMDPNAME" Type="varchar" MaxLength="150" />
+    <Property Name="BEGIN_DT" Type="varchar" MaxLength="50" />
+    <Property Name="END_DT" Type="varchar" MaxLength="50" />
+    <Property Name="DSPQTY" Type="varchar" MaxLength="50" />
+    <Property Name="DAYS" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CANCEL_YN" Type="varchar" MaxLength="1" />
+    <Property Name="CANCEL_DTTM" Type="varchar" MaxLength="14" />
+    <Property Name="CANCEL_USER_ID" Type="varchar" MaxLength="15" />
+    <Property Name="CANCEL_NAMEC" Type="varchar" MaxLength="24" />
+    <Property Name="PROC_DTTM" Type="varchar" MaxLength="14" />
+    <Property Name="PROC_USER_ID" Type="varchar" MaxLength="15" />
+    <Property Name="PROC_NAMEC" Type="varchar" MaxLength="24" />
+    <Property Name="CREATE_DTTM" Type="varchar" MaxLength="14" />
+    <Property Name="CREATE_USER_ID" Type="varchar" MaxLength="15" />
+    <Property Name="CREATE_NAMEC" Type="varchar" MaxLength="24" />
+    <Property Name="MAIN_DIAGNOSIS" Type="varchar" MaxLength="2000" />
+    <Property Name="ROUTE" Type="varchar" MaxLength="100" />
+    <Property Name="DOSEUNIT" Type="varchar" MaxLength="100" />
+    <Property Name="COMPLEX_MARK" Type="varchar" MaxLength="1" />
+    <Property Name="INSULOOKSEQ" Type="varchar" MaxLength="4" />
+    <Property Name="HOSPITAL_ID_ORI" Type="varchar" MaxLength="10" />
+    <Property Name="HOSPITAL_SNAME_ORI" Type="varchar" MaxLength="10" />
+    <Property Name="ATC3_NAME" Type="varchar" MaxLength="600" />
+    <Property Name="HOSPITAL_ID_CHRONIC" Type="varchar" MaxLength="10" />
+    <Property Name="HOSPITAL_SNAME_CHRONIC" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityContainer Name="TestModelStoreContainer">
+    <EntitySet Name="CMDALLERGY" EntityType="Self.CMDALLERGY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CMDBDRC" EntityType="Self.CMDBDRC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CMDEXAMREPORT" EntityType="Self.CMDEXAMREPORT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CMDTOCC" EntityType="Self.CMDTOCC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PHRCDRC" EntityType="Self.PHRCDRC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="COUNTRY" EntityType="Self.COUNTRY" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [COUNTRY].[CountryId] AS [CountryId], 
+    [COUNTRY].[CountryName] AS [CountryName]
+    FROM [dbo].[COUNTRY] AS [COUNTRY]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
