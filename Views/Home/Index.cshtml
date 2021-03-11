@@ -14,7 +14,7 @@
 
 <div>
     <div id="header">
-        <h1>輔大醫院123</h1>
+        <h1>輔大醫院</h1>
         <p>雲端下載藥歷運用及查詢</p>
     </div>
     <div id="Patient">
@@ -83,6 +83,7 @@
             </div>
         </div>
         <div id="CMDTOCC">
+            <div id="CMDTOCCListView"><h3>特定地區旅遊及接觸史查詢資料</h3></div>
         </div>
         <div id="CMDALLERGY">
             <div id="choose">
@@ -960,6 +961,30 @@
                                 { field: "CREATE_NAMEC", title: "記錄建立人員姓名", hidden: true },
                             ], //columns的field對應到customer資料表的欄位
                         });
+
+                        
+                        ///<summary>
+                        ///程式說明：顯示特定病人CMDTOCC ListView
+                        ///</summary>
+
+                        $("#CMDTOCCListView").kendoListView({
+                            dataSource: {
+                                transport: {
+                                    read: {
+                                        type: "POST",
+                                        url: "CMDTOCCPatientIdChange",
+                                        data: {
+                                            PatientId: function () {
+                                                return $("#Patienttextbox").val();
+                                            }
+                                        },
+                                        dataType: "json"
+                                    }
+                                }
+                            },
+                            template: "<p>#:TOCCMSG#</p>"
+                        });
+
 
                         ///<summary>
                         ///程式說明：顯示特定病人CMDALLERGY Grid
